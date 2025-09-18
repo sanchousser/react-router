@@ -8,6 +8,8 @@ import ProductsDetails from "../pages/ProductsDetails";
 import Mission from "./Mission";
 import Team from "./Team";
 import Reviews from "./Reviews";
+import Login from "../pages/Login";
+import Profile from "../pages/Profile";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           </Route>
           <Route path="/products" element={<Products />} />
           <Route path="/products/:productId" element={<ProductsDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

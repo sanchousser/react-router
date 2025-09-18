@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { getProductsId } from "../fakeAPI";
+import {getProductsId} from './../../src/services/fakeAPI'
+
 
 export default function ProductsDetails() {
   const { productId } = useParams();

@@ -1,8 +1,8 @@
-import { getProducts } from "../fakeAPI";
+import {getProductsId} from './../../src/services/fakeAPI'
 import ProductsList from "../components/ProductsList";
 
 export default function Products() {
-  const products = getProducts();
+  const products = getProductsId();
   return (
     <main>
       <h1>Products</h1>
